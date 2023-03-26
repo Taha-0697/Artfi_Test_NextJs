@@ -1,5 +1,6 @@
 import classList from './Footer.module.scss'
 import Section from '../Section/Section'
+import Paragraph from '../Paragraph/Paragraph'
 import Header from '../Header/Header'
 import Logo from '../../public/Assets/logo-white.png'
 import NavLink from '../Navlinks/Navlinks'
@@ -12,17 +13,20 @@ const Footer = () => {
         <Section>
           <div className={classList.footer_items}>
             <div className={classList.footer_cols}>
-              <Header color="white">Artfi - World</Header>
               <NavLink href="/" exact className="nav-item nav-link">
                 <Image
                   className={classList.logo}
                   src={Logo.src}
                   height={100}
-                  width={100}
+                  width={200}
                   alt="Logo"
-                  style={{ objectFit: 'fill', cursor: 'pointer' }}
+                  style={{ cursor: 'pointer' }}
                 />
               </NavLink>
+              <Paragraph color="white" style={{ margin: '20px 50px 0 0' }}>
+                Bringing the world’s most prestigious asset class on to the
+                blockchain.
+              </Paragraph>
             </div>
             <div className={classList.footer_cols}>
               <Header color="white">Menu</Header>
@@ -48,6 +52,7 @@ const Footer = () => {
               <Header color="white">About</Header>
               <ul>
                 <li>
+                  Email:{' '}
                   <a href="mailto:info@artfi.world.com">info@artfi.world.com</a>
                 </li>
                 <li>
@@ -57,6 +62,7 @@ const Footer = () => {
                   Fax: <a href="tel:+1 (212) 589-4535">+1 (212) 589-4535</a>
                 </li>
                 <li>
+                  Address:{' '}
                   <a className={classList.pointer}>
                     Banglow #23 , Abc Garden west , Dubai
                   </a>

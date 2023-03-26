@@ -1,8 +1,9 @@
-import React from 'react'
+import Header from './../../components/Header/Header'
 
 const Contact = () => {
   return (
-    <h1>Contact Us</h1>
+      <Header fontSize={'50'} fontWeight={'bold'} >Contact Us</Header>
+
 
   )
 }

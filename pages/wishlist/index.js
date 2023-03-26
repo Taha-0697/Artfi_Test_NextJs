@@ -1,8 +1,10 @@
+import Header from './../../components/Header/Header'
 
 const index = () => {
   return (
    <div id='wishlist'>
- <h1>WishList</h1>
+      <Header fontSize={'50'} fontWeight={'bold'} >WishList</Header>
+
 </div>
   )
 }

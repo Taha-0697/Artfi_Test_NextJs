@@ -44,8 +44,8 @@ const Navbar = () => {
             <Image
               className={classList.logo}
               src={Logo.src}
-              height={35}
-              width={85}
+              height={40}
+              width={120}
               alt="Logo"
               style={{ objectFit: 'fill', cursor: 'pointer' }}
             />

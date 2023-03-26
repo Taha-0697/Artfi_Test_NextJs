@@ -38,7 +38,7 @@ const Header = (props) => {
   var fontWeightValue = fontWeightComputation(fontWeight);
   var VariantComponent = `${variant}`;
   return (
-    <div style={{ fontSize: "16px" }}>
+    <div style={{ fontSize: "22px" }}>
       <VariantComponent
         className={customClass}
         style={{

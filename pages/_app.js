@@ -1,6 +1,6 @@
 import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
-import '../styles/globals.scss'
+import '../styles/globals.css'
 import Section from './../components/Section/Section'
 
 function MyApp({ Component, pageProps }) {
