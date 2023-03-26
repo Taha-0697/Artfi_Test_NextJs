@@ -1,16 +1,17 @@
+import { Provider } from 'react-redux'
 import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
 import '../styles/globals.css'
-import Section from './../components/Section/Section'
+import store  from './../store'
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Navbar />
-      {/* <Section> */}
-      <Component {...pageProps} />
-      {/* </Section> */}
-      <Footer />
+      <Provider store={store}>
+        <Navbar />
+        <Component {...pageProps} />
+        <Footer />
+      </Provider>
     </>
   )
 }
