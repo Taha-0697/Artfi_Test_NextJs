@@ -1,81 +1,46 @@
-import classList from "./Footer.module.scss";
-import Section from "../Section/Section";
-import Header from "../Header/Header";
-import paymentcards from "../../assets/images/paymentcards.svg";
-import NavLink from "../Navlinks/Navlinks";
-import { useWindowSize } from "../../utils/Data/helpers";
-import { phoneNumber } from "../../utils/Data/globalVariables";
+import classList from './Footer.module.scss'
+import Section from '../Section/Section'
+import Header from '../Header/Header'
+import Logo from '../../public/Assets/logo-white.png'
+import NavLink from '../Navlinks/Navlinks'
+import Image from 'next/image'
 
 const Footer = () => {
-  const device = useWindowSize();
-  console.log(device);
   return (
     <>
       <div className={classList.footer_wrapper}>
         <Section>
           <div className={classList.footer_items}>
             <div className={classList.footer_cols}>
-              <Header color="white">Services</Header>
-              <ul>
-                <NavLink href="web-design-services">
-                  <li>
-                    <span>Web Design</span>
-                  </li>
-                </NavLink>
-                <NavLink href="e-commerce-services">
-                  <li>
-                    <span>E-Commerce</span>
-                  </li>
-                </NavLink>
-                <NavLink href="branding-services">
-                  <li>
-                    <span>Branding</span>
-                  </li>
-                </NavLink>
-                <NavLink href="mobile-application-services">
-                  <li>
-                    <span>Mobile Application</span>
-                  </li>
-                </NavLink>
-                <NavLink href="website-application-services">
-                  <li>
-                    <span>Website Application</span>
-                  </li>
-                </NavLink>
-                <NavLink href="digital-marketing-services">
-                  <li>
-                    <span>Digital Marketing</span>
-                  </li>
-                </NavLink>
-              </ul>
+              <Header color="white">Artfi - World</Header>
+              <NavLink href="/" exact className="nav-item nav-link">
+                <Image
+                  className={classList.logo}
+                  src={Logo.src}
+                  height={100}
+                  width={100}
+                  alt="Logo"
+                  style={{ objectFit: 'fill', cursor: 'pointer' }}
+                />
+              </NavLink>
             </div>
             <div className={classList.footer_cols}>
-              <Header color="white">Company</Header>
+              <Header color="white">Menu</Header>
               <ul>
-                <NavLink href="/about">
-                  <li color="white">
-                    <span>About us</span>
-                  </li>
+                {/* <NavLink href="/" exact={'true'}>
+                  <li> Home </li>
+                </NavLink> */}
+                <NavLink href="/gallery">
+                  <li> Gallery </li>
                 </NavLink>
-                <NavLink href="/#howitworks">
-                  <li color="white">
-                    <span>How it works?</span>
-                  </li>
+                <NavLink href="/wishlist">
+                  <li>WishList</li>
                 </NavLink>
-                <NavLink href="/packages">
-                  <li color="white">
-                    <span>Packages</span>
-                  </li>
+                <NavLink href="/#about">
+                  <li>About</li>
                 </NavLink>
-                <NavLink href="/#ComboPackages">
-                  <li color="white">
-                    <span>Combo Packages</span>
-                  </li>
-                </NavLink>
-                <NavLink href="/contact">
-                  <li color="white">
-                    <span>Contact us</span>
-                  </li>
+                <NavLink href="/#contact">
+                  <li>Contact</li>
                 </NavLink>
               </ul>
             </div>
@@ -83,31 +48,26 @@ const Footer = () => {
               <Header color="white">About</Header>
               <ul>
                 <li>
-                  <a href="mailto:info@thecoredesigns.com">
-                    info@thecoredesigns.com
-                  </a>
+                  <a href="mailto:info@artfi.world.com">info@artfi.world.com</a>
                 </li>
                 <li>
-                  Tel: <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+                  Tel: <a href="tel:+1 (123) 456-7890">+1 (123) 456-7890</a>
                 </li>
                 <li>
-                  Fax: <a href="tel:+1 (212) 343-9069">+1 (212) 343-9069</a>
+                  Fax: <a href="tel:+1 (212) 589-4535">+1 (212) 589-4535</a>
                 </li>
                 <li>
                   <a className={classList.pointer}>
-                    99 Wall Street # 1161 New York, NY 10005
+                    Banglow #23 , Abc Garden west , Dubai
                   </a>
                 </li>
-
-                <Header color="#fff">Payment Method</Header>
-                <img src={paymentcards.src} alt="" />
               </ul>
             </div>
           </div>
         </Section>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

@@ -1,10 +1,10 @@
 import React from 'react'
 
-const index = () => {
+const Contact = () => {
   return (
     <h1>Contact Us</h1>
 
   )
 }
 
-export default index
+export default Contact

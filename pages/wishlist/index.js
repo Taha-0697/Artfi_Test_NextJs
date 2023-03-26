@@ -1,8 +1,8 @@
 
 const index = () => {
   return (
-   <div id='gallery'>
- <h1>Gallery</h1>
+   <div id='wishlist'>
+ <h1>WishList</h1>
 </div>
   )
 }

@@ -29,7 +29,7 @@
 }
 
 .combo_wrapper {
-  background-image: url("../assets/images/sample/combo-left.png");
+ // background-image: url("../assets/images/sample/combo-left.png");
   background-size: cover;
   background-position: 0 -100px;
 }
@@ -83,8 +83,10 @@
     }
   }
 
- 
+
 }
+
+
 
 @media screen and (min-width: 541px) and (max-width: 991px) {
   .statisticsMain {

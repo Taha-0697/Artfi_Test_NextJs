@@ -31,7 +31,7 @@ const Navbar = () => {
     <>
       <div
         style={{
-          backgroundColor: scroll === 0 ? 'white' : 'rgba(255,255,255,0.95)',
+          backgroundColor: scroll === 0 ? 'white' : '#ffffff',
         }}
         className={classList.navbar}
       >
@@ -57,8 +57,9 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink href="/gallery">Gallery</NavLink>
-            <NavLink href="/about">About</NavLink>
-            <NavLink href="/contact">Contact</NavLink>
+            <NavLink href="/wishlist">WishList</NavLink>
+            <NavLink href="/#about">About</NavLink>
+            <NavLink href="/#contact">Contact</NavLink>
           </div>
         </div>
 

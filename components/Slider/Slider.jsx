@@ -71,7 +71,17 @@ const Slider = ({ setNavbar, navbar }) => {
           </div>
           <div className={classList.slider_list_item}>
             <div onClick={() => setNavbar(false)}>
-              <NavLinks href={'/about'} activeClassName={classList.active_link}>
+              <NavLinks
+                href={'/wishlist'}
+                activeClassName={classList.active_link}
+              >
+                WishList
+              </NavLinks>
+            </div>
+          </div>
+          <div className={classList.slider_list_item}>
+            <div onClick={() => setNavbar(false)}>
+              <NavLinks href={'/#about'} activeClassName={classList.active_link}>
                 About
               </NavLinks>
             </div>
@@ -79,7 +89,7 @@ const Slider = ({ setNavbar, navbar }) => {
           <div className={classList.slider_list_item}>
             <div onClick={() => setNavbar(false)}>
               <NavLinks
-                href={'/contact'}
+                href={'/#contact'}
                 activeClassName={classList.active_link}
               >
                 Contact
